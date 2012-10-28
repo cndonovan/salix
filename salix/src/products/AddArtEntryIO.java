@@ -1,4 +1,4 @@
-package artwork;
+package products;
 
 import java.io.*;
 

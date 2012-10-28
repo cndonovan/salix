@@ -1,12 +1,13 @@
-package artwork;
+package products;
 
 public class Painting extends Artwork {
 	private double height, width;
 	private String surface;
 	
-	public Painting(double price, boolean forSale, String title, String medium,
-			int yearCreated, double height, double width, String surface, String loadDate) {
-		super(price, forSale, title, medium, yearCreated, loadDate);
+	public Painting(	double price, boolean isForSale, String date_uploaded,
+						String title, String medium, int year_created,
+						double height, double width, String surface) {
+		super(price, isForSale, date_uploaded, title, medium, year_created);
 		this.height = height;
 		this.width = width;
 		this.surface = surface;
@@ -31,7 +32,7 @@ public class Painting extends Artwork {
 		return surface;
 	}
 	public String toString() {
-		return super.toString() + "\n" + height + "x" + width + "\n" + "on " + surface; 
+		return super.toString() + "\nHeight: " + height + "\nWidth: " + width + "\nSurface: " + surface; 
 	}
 
 }
