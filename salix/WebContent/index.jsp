@@ -32,11 +32,25 @@
 		<th>Crested Nuthatch</th>
 	</tr>
 	<tr id="medium-row">
-		<td>Acrylic on barn wood</td>
-		<td>Acrylic on barn wood</td>
-		<td>Acrylic on barn wood</td>
-		<td>Acrylic on barn wood</td>
-		<td>Acrylic on barn wood</td>
+		<td>Acrylic</td>
+		<td>Acrylic</td>
+		<td>Acrylic</td>
+		<td>Acrylic</td>
+		<td>Acrylic</td>
+	</tr>
+	<tr id="surface-row">
+		<td>Barn wood</td>
+		<td>Barn wood</td>
+		<td>Barn wood</td>
+		<td>Barn wood</td>
+		<td>Barn wood</td>
+	</tr>
+	<tr>
+		<td>$100.00</td>
+		<td>$150.00</td>
+		<td>$100.00</td>
+		<td>$100.00</td>
+		<td>$100.00</td>
 	</tr>
 </table>
 </div>

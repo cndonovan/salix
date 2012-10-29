@@ -935,6 +935,10 @@ table {
 .table-striped tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
+.table-striped tbody tr:nth-child(even) td,
+.table-striped tbody tr:nth-child(even) th {
+	 background-color: #fff9f0;
+}
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
   background-color: #f5f5f5;
@@ -3300,7 +3304,8 @@ input[type="submit"].btn.btn-mini {
   //margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: #777777;
+  //color: #777;
+  color: #11929e;
   text-shadow: 0 1px 0 #ffffff;
 }
 .navbar .brand:hover {
@@ -3459,7 +3464,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #777777;
+  //color: #777777;
+  color: #11929e;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
