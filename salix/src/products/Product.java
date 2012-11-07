@@ -1,26 +1,23 @@
 package products;
 
 public abstract class Product {
-	private int id;
+	private String id;
 	private double price;
 	private boolean isForSale;
 	String date_uploaded;
 	
-	// Check this implementation
-	private static int highest_index = 0;
-	
-	public Product(double price, boolean isForSale, String date_uploaded) {
-		this.id = highest_index++;
+	public Product(String id, double price, boolean isForSale, String date_uploaded) {
+		this.id = id;
 		this.price = price;
 		this.isForSale = isForSale;
 		this.date_uploaded = date_uploaded;
 	}
 	
-	public int getId() {
+	public String getId() {
 		return this.id;
 	}
 	
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	

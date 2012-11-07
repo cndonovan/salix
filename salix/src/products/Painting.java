@@ -4,10 +4,10 @@ public class Painting extends Artwork {
 	private double height, width;
 	private String surface;
 	
-	public Painting(	double price, boolean isForSale, String date_uploaded,
+	public Painting(	String id, double price, boolean isForSale, String date_uploaded,
 						String title, String medium, int year_created,
 						double height, double width, String surface) {
-		super(price, isForSale, date_uploaded, title, medium, year_created);
+		super(id, price, isForSale, date_uploaded, title, medium, year_created);
 		this.height = height;
 		this.width = width;
 		this.surface = surface;

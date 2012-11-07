@@ -4,9 +4,9 @@ public abstract class Artwork extends Product {;
 	private String title, medium;
 	private int year_created;
 	
-	public Artwork(	double price, boolean is_for_sale, String date_uploaded, 
+	public Artwork(	String id, double price, boolean is_for_sale, String date_uploaded, 
 					String title, String medium, int year_created) {
-		super(price, is_for_sale, date_uploaded);
+		super(id, price, is_for_sale, date_uploaded);
 		this.title = title;
 		this.medium = medium;
 		this.year_created = year_created;
