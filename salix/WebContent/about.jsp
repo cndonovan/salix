@@ -17,13 +17,11 @@
 		<%@ include file="shared/header.jsp" %>
 		<div class="row-fluid">
 			<div class="span12">
-				<p>I've studied at the following schools:</p>
-				<ul>
-					<li><a href="http://mills.edu/">Mills College</a></li>
-					<li><a href="http://scrippscollege.edu/">Scripps College</a></li>
-					<li><a href="http://www.gsa.ac.uk/">Glasgow School of Art</a></li>
-				</ul>
-				<p>Contact me at <a href="mailto:wsolem@mills.edu">wsolem@mills.edu</a>.</p>
+				<p class="well">Willow Solem has studied at 
+				<a href="http://mills.edu/">Mills College</a>, 
+				<a href="http://scrippscollege.edu/">Scripps College</a>, and 
+				<a href="http://www.gsa.ac.uk/">Glasgow School of Art</a>.
+				</p>
 			</div>
 		</div>
 	</div>

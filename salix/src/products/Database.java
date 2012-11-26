@@ -1,8 +1,9 @@
 package products;
 
+import java.util.Collections;
 import java.util.Hashtable;
 import java.util.Date;
-import java.util.Enumeration;
+import java.util.List;
 
 public class Database {
 	private Hashtable<String, Painting> all_products;
@@ -21,8 +22,8 @@ public class Database {
 		all_products.put(crested_nuthatch.getId(), crested_nuthatch);
 	}
 	
-	public Enumeration<String> keys() {
-		return all_products.keys();
+	public List<String> keys() {
+		return Collections.list(all_products.keys());
 	}
 	
 	public Painting get(String id) {

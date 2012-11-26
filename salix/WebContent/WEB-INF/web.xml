@@ -11,13 +11,13 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>PurchaseArtworkServlet</display-name>
-    <servlet-name>PurchaseArtworkServlet</servlet-name>
-    <servlet-class>products.PurchaseArtworkServlet</servlet-class>
+    <display-name>ShoppingCartServlet</display-name>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <servlet-class>products.ShoppingCartServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>PurchaseArtworkServlet</servlet-name>
-    <url-pattern>/PurchaseArtworkServlet</url-pattern>
-    <url-pattern>/purchase_artwork</url-pattern>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <url-pattern>/ShoppingCartServlet</url-pattern>
+    <url-pattern>/update_shopping_cart</url-pattern>
   </servlet-mapping>
 </web-app>

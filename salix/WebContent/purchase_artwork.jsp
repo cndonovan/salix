@@ -25,9 +25,8 @@
 						<div class="control-group">
 							<label class="control-label">Paintings</label>
 							<select name="id" class="controls" multiple>
-							<% 	Enumeration<String> keys = database.keys();
-								while (keys.hasMoreElements()) { 
-									String key = keys.nextElement(); 
+							<% 	List<String> keys = database.keys();
+								for (String key : keys) {  
 									Painting painting = database.get(key);%>
 								<option value=<%=key%>> <%= painting.getTitle() %> ($<%= painting.getPrice() %>)</option>
 							<% } %>
