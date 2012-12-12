@@ -9,7 +9,27 @@
  */
 
 /**Salix**/
+ul li a:hover {
+	text-decoration: none;
+}
 
+.gallery table {
+	width: 100%;
+}
+
+.gallery table td {
+	width: 19%;
+}
+
+.gallery table td img {
+	height: 250px;
+	box-shadow: 0 0 5px #444444;
+}
+
+.gallery table td.title {
+	font-weight: bold;
+	font-size: 16px;
+}
 
 /**Bootstrap**/
 .clearfix {

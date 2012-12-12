@@ -15,34 +15,44 @@
 		<div class="row-fluid">
 			<div class="span12">
 				<%
-					if (cart.getTotal() > 0) {
-						String[] items = cart.getItems();
+					if (shopping_cart.getNumberOfProducts() > 0) {
+						LineItem[] line_items = shopping_cart.getLineItems();
 				%>
-						<form>
+				
+						<form action ="ShoppingCartServlet?action=finalize" method="post">
 						<table class="table table-bordered table-striped">
 							<tr>
-								<td>Item</td>
+								<td>Product</td>
 								<td>Quantity</td>
+								<td></td>
 							</tr>
-							<% for (String item_id : items) { %>
+							<% 
+								for (LineItem line_item : line_items) { 
+									Product product = line_item.getProduct();
+									int product_id = product.getProductID();
+									String title = ((Painting) product).getTitle();
+							%>
 							<tr>
-								<td><%=item_id%></td>
+								<td><%=title%></td>
 								<td>
 									<ul style="list-style-type:none">
-										<li style="font-size:24px;"><a href="ShoppingCartServlet?action=increment&id=<%=item_id%>">&#x2303;</a></li>
-										<li style="padding-left:5px"><%=cart.getQuantityOfItem(item_id)%></li>
-										<li style="font-size:24px;"><a href="ShoppingCartServlet?action=decrement&id=<%=item_id%>">&#x2304;</a></li>
+										<li style="font-size:24px;"><a href="ShoppingCartServlet?action=add_product&product_id=<%=product_id%>">&#x2303;</a></li>
+										<li style="padding-left:5px"><%=line_item.getQuantity()%></li>
+										<li style="font-size:24px;"><a href="ShoppingCartServlet?action=remove_product&product_id=<%=product_id%>">&#x2304;</a></li>
 									</ul>
-									<a href="ShoppingCartServlet?action=remove&id=<%=item_id%>">Remove All</a>
 								</td>
+								<td><a href="ShoppingCartServlet?action=remove_line_item&product_id=<%=product_id%>">Remove All</a></td>
 							</tr>
 						<% } %>
 					</table>
+					<input type="submit" class="btn btn-primary" value = "Submit Order">
 				</form>
 				<% } else { %>
 				<p class="well">
-					There are no items in your cart.
+					There are no items in your cart yet.
 				</p>
+				
+				
 				<% } %>
 			</div>
 		</div>

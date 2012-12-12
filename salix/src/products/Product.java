@@ -1,24 +1,22 @@
 package products;
 
 public abstract class Product {
-	private String id;
+	private int product_id;
 	private double price;
-	private boolean isForSale;
-	String date_uploaded;
+	private boolean for_sale;
 	
-	public Product(String id, double price, boolean isForSale, String date_uploaded) {
-		this.id = id;
+	public Product(int product_id, double price, boolean for_sale) {
+		this.product_id = product_id;
 		this.price = price;
-		this.isForSale = isForSale;
-		this.date_uploaded = date_uploaded;
+		this.for_sale = for_sale;
 	}
 	
-	public String getId() {
-		return this.id;
+	public int getProductID() {
+		return this.product_id;
 	}
 	
-	public void setId(String id) {
-		this.id = id;
+	public void setProductID(int product_id) {
+		this.product_id = product_id;
 	}
 	
 	public double getPrice() {
@@ -29,16 +27,18 @@ public abstract class Product {
 		this.price = price;
 	}
 	
-	public boolean getIsForSale() {
-		return this.isForSale;
+	public boolean isForSale() {
+		return this.for_sale;
 	}
 	
-	public void setIsForSale(boolean isForSale) {
-		this.isForSale = isForSale;
+	public void setForSale(boolean for_sale) {
+		this.for_sale = for_sale;
 	}
 	
 	public String toString() {
-		return "\nID :" + this.id + "\nPrice: " + this.price + "\nFor Sale: " + this.isForSale; 
+		return "\nProduct ID: " + this.product_id + 
+				"\nPrice: " + this.price + 
+				"\nFor Sale: " + this.for_sale; 
 	}
 
 }
